@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h3>TaskFollow</h3>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h2>Task List</h2>
+            <button class="btn" id="addTaskBtn">Add Task</button>
+
+            <div class="input-field" id="input-Field">
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Enter Title">
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Enter Description">
+                <button class="submit-btn" id="submitBtn">Submit</button>
+            </div>
+        </div>
+
+        <div class="task-list">
+            <div class="list" id="task">
+                <h2>Tasks</h2>
+                <div class="card" id="task-Container"><i class="fa-solid fa-pen"></i></div>
+                <button class="submit-btn" id="in-progress-btn">In Progress</button>
+            </div>
+            <div class="list" id="in-progress">
+                <h2>In Progress</h2>
+                <div class="card"></div>
+                <button class="submit-btn" id="task-btn">Task</button>
+                <button class="submit-btn" id="complete-btn">Complete</button>
+            </div>
+            <div class="list" id="complete">
+                <h2>Complete Task</h2>
+                <div class="card"></div>
+                <button class="submit-btn" id="task-btn">Task</button>
+                <button class="submit-btn" id="in-progress-btn">In Progress</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
